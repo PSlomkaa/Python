@@ -1,0 +1,16 @@
+def oblicz_pole_trapezu(a, b, h):
+    return 0.5 * (a + b) * h
+def oblicz_obwod_trapezu(a, b, c, d):
+    return a + b + c + d
+
+a = float(input("Podaj długość boku a: "))
+b = float(input("Podaj długość boku b: "))
+h = float(input("Podaj wysokość h: "))
+c = float(input("Podaj długość boku c: "))
+d = float(input("Podaj długość boku d: "))
+
+pole = oblicz_pole_trapezu(a, b, h)
+obwod = oblicz_obwod_trapezu(a, b, c, d)
+
+print("Pole trapezu wynosi:", pole)
+print("Obwód trapezu wynosi:", obwod)
